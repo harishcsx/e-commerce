@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Ecommerce Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide1 {
+  background-color: red;
+  background-image:url(https://www.apple.com/v/mac-mini/s/images/overview/accessories__eoswh6dgbp4y_large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 100%; */
+}
+
+.slide2 {
+  background-color: green;
+  background-image:url(https://www.apple.com/v/iphone-se/j/images/overview/ios/ios16__f7s4v2yi43e6_large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 100%; */
+}
+
+.slide3 {
+  background-color: blue;
+  background-color: green;
+  background-image:url(https://www.apple.com/v/ipad-pro/al/images/overview/ipados/thunderbolt_hero__bn4yb1ktt4dy_large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 100%; */
+}
+
+.card{
+  border-radius:40px;
+  border-color:black;
+  border:solid 2px #a8a8a8;
+  padding: 20px;
+  background-color:
+#a8a8a8;
+}
+.btn {
+  border-radius:20px;
+}
+.cont img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  </style>
+</head>
+<body style="background-color: #000000;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:  rgba(22, 22, 23, .8) !important;"
+  >
+  <div class="cont" >
+  <!-- <a style="color: white;" class="navbar-brand" href="#"> -->
+    <img style=" width: 50px;"src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" alt="apple logo" >
+    <!-- </a>--></div> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="background-image: url(https://www.breckenridge.agency/hs-fs/hub/329150/file-1317376384-png/website/img/menu-toggle-thin.png);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+<!-- slider  -->
+  <div class="slider">
+    <div class="slide slide1">
+      <!-- <h2>Slide </h2> -->
+    </div>
+    <div class="slide slide2">
+      <!-- <h2>Slide 2</h2> -->
+    </div>
+    <div class="slide slide3">
+      <!-- <h2>Slide 3</h2> -->
+    </div>
+  </div>
+
+  <!-- Jumbotron -->
+  <!-- <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to My Ecommerce Website</h1>
+      <p class="lead">We have a wide range of products to choose from. Check out our shop for the latest products and deals!</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a>
+    </div>
+  </div> -->
+
+  <!-- Featured Products -->
+  <div class="container">
+    <h2 class="text-center mb-4" style="background: rgb(19,37,130);
+    background: linear-gradient(0deg, rgba(19,37,130,1) 0%, rgba(244,0,174,1) 100%);  -webkit-text-fill-color: transparent; -webkit-background-clip: text; font-size: 60px;">Featured Products</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662655662/Croma%20Assets/Communication/Mobiles/Images/261979_oq7vjv.png/mxw_640,f_auto" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">This is a short description of the product.</p>
+            <a href="#" class="btn btn-primary">View Product</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662703724/Croma%20Assets/Communication/Mobiles/Images/261934_qgssvy.png/mxw_640,f_auto" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">This is a short description of the product.</p>
+            <a href="#" class="btn btn-primary">View Product</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="https://media.croma.com/image/upload/v1662703541/Croma%20Assets/Communication/Mobiles/Images/261930_q0hq3w.png" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">This is a short description of the product.</p>
+            <a href="#" class="btn btn-primary">View Product</a>
+          </div>
+        </div>
+      </div>
+      <script src="script.js
+      "></script>
+</html>
+
+
